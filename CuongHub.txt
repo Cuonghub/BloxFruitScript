@@ -676,12 +676,12 @@ IsPc = CheckPC()
 executor = tostring(identifyexecutor())
 if IsPc then
   if not string.find(executor, "Wave") or not string.find(executor, "AWP") then
-    Fluent:Notify({Title = "Cuong Hub Script",Content = "Free",SubContent = "",Duration = 15})
+    Fluent:Notify({Title = "Cuong Hub Script",Content = "",SubContent = "",Duration = 15})
   else
-    Fluent:Notify({Title = "Cuong Hub Script",Content = "Free",SubContent = "",Duration = 15})
+    Fluent:Notify({Title = "Cuong Hub Script",Content = "",SubContent = "",Duration = 15})
   end
 else
-  Fluent:Notify({Title = "Cuong Hub Script",Content = "Free",SubContent = "Done",Duration = 15})
+  Fluent:Notify({Title = "Cuong Hub Script",Content = "",SubContent = "",Duration = 15})
 end
 
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "", Default = false})
