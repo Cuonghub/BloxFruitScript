@@ -619,20 +619,20 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 local Window = Fluent:CreateWindow({Title = "Cuong Hub",SubTitle = "By macuongdz",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "AMETHYST",MinimizeKey = Enum.KeyCode.End})
 local Tabs = {
-  Main = Window:AddTab({Title = "Farm", Icon = ""}),
-  Settings = Window:AddTab({Title = "Config", Icon = ""}),
-  Melee = Window:AddTab({Title = "Fighting Style", Icon = ""}),
-  Quests = Window:AddTab({Title = "Items Farm", Icon = ""}),
-  SeaEvent = Window:AddTab({Title = "Sea Events", Icon = ""}),
-  Mirage = Window:AddTab({Title = "Mirage + RaceV4", Icon = ""}),
-  Drago = Window:AddTab({Title = "Drago Dojo", Icon = ""}),
-  Prehistoric = Window:AddTab({Title = "Prehistoric", Icon = ""}),
-  Raids = Window:AddTab({Title = "Raid", Icon = ""}),
-  Combat = Window:AddTab({Title = "Combat PVP", Icon = ""}),
-  Travel = Window:AddTab({Title = "Teleport", Icon = ""}),
-  Fruit = Window:AddTab({Title = "Fruits", Icon = ""}),
-  Shop = Window:AddTab({Title = "Shop", Icon = ""}),
-  Misc = Window:AddTab({Title = "Misc", Icon = ""})
+  Main = Window:AddTab({Title = "Tab Farming", Icon = ""}),
+  Settings = Window:AddTab({Title = "Tab Setting", Icon = ""}),
+  Melee = Window:AddTab({Title = "Tab Fighting Style", Icon = ""}),
+  Quests = Window:AddTab({Title = "Tab Items Farm", Icon = ""}),
+  SeaEvent = Window:AddTab({Title = "Tab Sea Events", Icon = ""}),
+  Mirage = Window:AddTab({Title = "Tab Mirage + RaceV4", Icon = ""}),
+  Drago = Window:AddTab({Title = "Tab Drago Dojo", Icon = ""}),
+  Prehistoric = Window:AddTab({Title = "Tab Prehistoric", Icon = ""}),
+  Raids = Window:AddTab({Title = "Tab Raid", Icon = ""}),
+  Combat = Window:AddTab({Title = "Tab Combat PVP", Icon = ""}),
+  Travel = Window:AddTab({Title = "Tab Teleport", Icon = ""}),
+  Fruit = Window:AddTab({Title = "Tab Fruits", Icon = ""}),
+  Shop = Window:AddTab({Title = "Tab Shop", Icon = ""}),
+  Misc = Window:AddTab({Title = "Tab Misc", Icon = ""})
 }
 if game.CoreGui:FindFirstChild('UIBUTTON') then
   game.CoreGui:FindFirstChild('UIBUTTON'):Destroy()
@@ -1384,7 +1384,7 @@ spawn(function()
     end)
   end
 end)
-local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Cake Prince", Description = "", Default = false})
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Fram Cake Prince", Description = "", Default = false})
 Q:OnChanged(function(Value)
   _G.Auto_Cake_Prince = Value
 end)
@@ -1440,7 +1440,7 @@ spawn(function()
     end
   end
 end)
-local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Bones", Description = "", Default = false})
+local Q = Tabs.Main:AddToggle("Q", {Title = "Auto Fram Bones", Description = "", Default = false})
 Q:OnChanged(function(Value)
   _G.AutoFarm_Bone = Value
 end)
@@ -2359,7 +2359,7 @@ spawn(function()
 end)
 
 Tabs.Melee:AddSection("Fighting Melee Styles")
-local SuperHuman = Tabs.Melee:AddToggle("SuperHuman", {Title = "Auto Superhuman", Description = "", Default = false})
+local SuperHuman = Tabs.Melee:AddToggle("SuperHuman", {Title = "Auto Get Superhuman", Description = "", Default = false})
 SuperHuman:OnChanged(function(Value)
   _G.Auto_SuperHuman = Value
 end)
@@ -2390,7 +2390,7 @@ spawn(function()
     end)
   end
 end)
-local DeathStep = Tabs.Melee:AddToggle("DeathStep", {Title = "Auto DeathStep", Description = "", Default = false})
+local DeathStep = Tabs.Melee:AddToggle("DeathStep", {Title = "Auto Get DeathStep", Description = "", Default = false})
 DeathStep:OnChanged(function(Value)
   _G.AutoDeathStep = Value
 end)
@@ -2420,7 +2420,7 @@ spawn(function()
     end
   end
 end)
-local SharkManV2 = Tabs.Melee:AddToggle("SharkManV2", {Title = "Auto Sharkman Karate", Description = "", Default = false})
+local SharkManV2 = Tabs.Melee:AddToggle("SharkManV2", {Title = "Auto Get Sharkman Karate", Description = "", Default = false})
 SharkManV2:OnChanged(function(Value)
   _G.Auto_SharkMan_Karate = Value
 end)
@@ -2453,7 +2453,7 @@ spawn(function()
     end
   end
 end)
-local ElectricClaw = Tabs.Melee:AddToggle("ElectricClaw", {Title = "Auto ElectricClaw", Description = "", Default = false})
+local ElectricClaw = Tabs.Melee:AddToggle("ElectricClaw", {Title = "Auto Get ElectricClaw", Description = "", Default = false})
 ElectricClaw:OnChanged(function(Value)
   _G.Auto_Electric_Claw = Value
 end)
@@ -2474,7 +2474,7 @@ spawn(function()
     end
   end
 end)
-local DragonTalon = Tabs.Melee:AddToggle("DragonTalon", {Title = "Auto DragonTalon", Description = "", Default = false})
+local DragonTalon = Tabs.Melee:AddToggle("DragonTalon", {Title = "Auto Get DragonTalon", Description = "", Default = false})
 DragonTalon:OnChanged(function(Value)
   _G.AutoDragonTalon = Value
 end)
@@ -2492,7 +2492,7 @@ spawn(function()
     end
   end
 end)
-local Godhuman = Tabs.Melee:AddToggle("Godhuman", {Title = "Auto Godhuman", Description = "", Default = false})
+local Godhuman = Tabs.Melee:AddToggle("Godhuman", {Title = "Auto Get Godhuman", Description = "", Default = false})
 Godhuman:OnChanged(function(Value)
   _G.Auto_God_Human = Value
 end)
@@ -2539,7 +2539,7 @@ spawn(function()
     end)
   end
 end)
-local SanguineArt = Tabs.Melee:AddToggle("SanguineArt", {Title = "Auto SanguineArt", Description = "", Default = false})
+local SanguineArt = Tabs.Melee:AddToggle("SanguineArt", {Title = "Auto Get SanguineArt", Description = "", Default = false})
 SanguineArt:OnChanged(function(Value)
   _G.snaguine = Value
 end)
